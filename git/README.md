@@ -4,7 +4,7 @@
 
 ## Git Lecture
 
-### Git Flow
+### 1.Git Flow
 
 -  **Tổng quan về Git Flow:** Gitflow chỉ là một ý tưởng trừu tượng về quy trình sử dụng Git, Nó chỉ ra cách thức setup các loại branchs khác nhau và cách thức để merge chúng lại với nhau.
 
@@ -22,7 +22,7 @@ bạn.
 
 -  **Git branch:** Vai trò cụ thể của các branches khác nhau và thời điểm mà chúng cần tương tác.
 
-### Git Clone
+### 2.Git Clone
 
 **Dùng dể:**
 
@@ -47,7 +47,7 @@ Với `url-repo` là địa chỉ URL ví dụ: https://github.com/Tomosia-LuanD
 Mặc định nó sẽ sao chép về nhánh hoạt động, để xem tất cả các nhánh có trên Remote dùng lệnh:
 `git branch --remote`
 Để có thể lấy các nhánh khác nữa bạn cần chạy lệnh `git fetch` và checkout từng nhánh muốn lấy
-### Git Checkout
+### 3.Git Checkout
 
 Là câu lệnh dùng để thay đổi các nhánh làm việc, tạo mới các nhánh làm việc
 ### Sử dụng git checkout
@@ -55,7 +55,7 @@ Là câu lệnh dùng để thay đổi các nhánh làm việc, tạo mới cá
  `git checkout master`
 2. Tạo mới 1 nhánh mới: Nếu bạn muốn tạo một nhánh làm việc mới có tên là `branch1` thì sử dụng lệnh:
 `git checkout -b branch1`
-### Git Add
+### 4.Git Add
 Là câu lệnh dùng để đưa các tệp từ cùng Working directory sang vùng Staging, hoặc thự mục cụ thể
 ### Sử dụng git add
 Lệnh `git add` có các cách thực hiện với những tham số khác nhau:
@@ -68,4 +68,4 @@ git add -A
 Hoặc add [thư mục hiên tại]
 git add  .
 ```
-### Git Commit
+### 5.Git Commit
