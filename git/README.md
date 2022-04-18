@@ -1,4 +1,6 @@
-
+<p align="center">
+<a href="#"><img width="80%" height="auto" src="https://codelearn.io/Media/Default/Users/T_5FFlower/blog/git.png"/></a>
+</p>
 
 ## Git Lecture
 
@@ -29,16 +31,16 @@ bạn.
 - Copy một Repo từ thư mục này sang một thư mục khác
 
 - Copy một Repo từ một Url (https) ví dụ GitHub
-### <span style="color:blue">Sử dụng git clone</span>
-#### <span style="color:blue">Copy Repo từ thư mục này sang thư mục khác</span>
+### Sử dụng git clone
+#### Copy Repo từ thư mục này sang thư mục khác
 Trên máy của bạn có một Git Repo ở đường dẫn `path-repo`, bạn có thể copy sang vị trí thực mục hiện tại bằng lệnh:
 `git clone path-repo`
 Có thể chỉ rõ thư mục cần copy về thay vì tại thư mục hiện tại:
 `git clone path-repo path-des`
-#### <span style="color:blue">Copy Repo từ server về bằng giao thức ssh</span>
+#### Copy Repo từ server về bằng giao thức ssh
 Vị dụ Server có kết nối ssh: user@host, trên đó lưu một Repo ở đường dẫn /github.com/username/repo, thì có thể copy về bằng lệnh:
 `git clone user@host:/github.com/username/repo.git`
-#### <span style="color:blue">Copy Repo bằng giao thức https</span>
+#### Copy Repo bằng giao thức https
 Nhiều dịch vụ Git cung cấp kết nối bằng giao thức (https) ví dụ GitHub, GitLab thì copy về bằng lệnh:
 `git clone url-repo`
 Với `url-repo` là địa chỉ URL ví dụ: https://github.com/Tomosia-LuanDang/Git_Lecture.git
@@ -48,18 +50,16 @@ Mặc định nó sẽ sao chép về nhánh hoạt động, để xem tất c�
 ### Git Checkout
 
 Là câu lệnh dùng để thay đổi các nhánh làm việc, tạo mới các nhánh làm việc
-
-### <span style="color:blue">Sử dụng git checkout</span>
-
+### Sử dụng git checkout
 1. Thay đổi nhánh làm việc: Giả sử đang ở nhánh nào đó, muốn chuyển sang nhánh master thì thực hiện lệnh:
  `git checkout master`
 2. Tạo mới 1 nhánh mới: Nếu bạn muốn tạo một nhánh làm việc mới có tên là `branch1` thì sử dụng lệnh:
 `git checkout -b branch1`
 ### Git Add
 Là câu lệnh dùng để đưa các tệp từ cùng Working directory sang vùng Staging, hoặc thự mục cụ thể
-### <span style="color:blue">Sử dụng git add</span>
+### Sử dụng git add
 Lệnh `git add` có các cách thực hiện với những tham số khác nhau:
-### <span style="color:blue">Đưa vào vùng  **staging**  toàn bộ thư mục làm việc</span>
+### Đưa vào vùng  **staging**  toàn bộ thư mục làm việc
 Trường hợp dùng phổ biến là đưa toàn bộ thư mục làm việc vào giám sát, và tạo snapshot trong vùng staging cho chúng thì dùng cú pháp lệnh:
 ```
 git add --all
