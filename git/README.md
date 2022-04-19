@@ -93,26 +93,23 @@ Khi có sự thay đổi của thư mục làm việc mà chưa đưa vào vùng
 ### 7. Git Push
 Sử dụng để đẩy các commit mới ở máy trạm (local repo) lên server (remote repo)
 ### Sử dụng git push
-Nếu là lần đầu tiên đẩy Local Repo lên Remote Repo mới khởi tạo thì cần tạo ra một theo dõi kết nối, upstream giữa local và remote, vậy hãy dùng tham số -u. Ví dụ đẩy lên remote có tên origin và tạo upstream cho nhánh master
-`git push -u origin master`
-Sau khi có upstream, mỗi lần cần đẩy dữ liệu lên remote của nhánh master, chỉ việc thực hiện lệnh
-`git push`
-Hoặc có thể đẩy một nhánh cụ thể, ví dụ đẩy nhánh branch1 lên remote có tên origin
-`git push origin branch1`
+Nếu là lần đầu tiên đẩy Local Repo lên Remote Repo mới khởi tạo thì cần tạo ra một theo dõi kết nối, upstream giữa local và remote, vậy hãy dùng tham số -u. Ví dụ đẩy lên remote có tên origin và tạo upstream cho nhánh master<br>
+`git push -u origin master`<br>
+Sau khi có upstream, mỗi lần cần đẩy dữ liệu lên remote của nhánh master, chỉ việc thực hiện lệnh<br>
+`git push`<br>
+Hoặc có thể đẩy một nhánh cụ thể, ví dụ đẩy nhánh branch1 lên remote có tên origin<br>
+`git push origin branch1`<br>
 ### 8. Git Merge
-Sử dụng để gộp nhánh, gộp nhánh này vào nhánh khác
-Để gộp nhánh branh1 vào nhánh master thì trước tiên cần chuyển không gian làm việc sang nhánh master `git checkout master ` sau đó sử dụng lệnh:
-`git merge branch1`
-Nếu muốn gộp 1 nhánh bất kỳ nào vào master mà không cần chuyển không gian làm việc thì sử dụng lệnh:
-`git merge master branch1`
+Sử dụng để gộp nhánh, gộp nhánh này vào nhánh khác<br>
+Để gộp nhánh branh1 vào nhánh master thì trước tiên cần chuyển không gian làm việc sang nhánh master `git checkout master ` sau đó sử dụng lệnh:<br>
+`git merge branch1`<br>
+Nếu muốn gộp 1 nhánh bất kỳ nào vào master mà không cần chuyển không gian làm việc thì sử dụng lệnh:<br>
+`git merge master branch1`<br>
 ### 9. Git Rebase
-Sử dụng để gộp các commit từ nhánh này vào nhánh khác, bằng cách xây dựng lại các commit base kế thừa từ nhánh cũ và viết lại lịch sử commit sau các commit cơ sở mới. Kỹ thuật này thường được áp dụng để xử lý các conflix trong code
-
-Ví dụ: Muốn gộp các commit của nhánh master vào nhánh branch1, thì đứng ở nhánh branch1 và thực hiện lệnh:
-`git rebase master`
-
-Lúc này các commit ở master sẽ được branch kế thừa và đồng thời sẽ xuất hiện các commit này trong log của branch, nếu có sự thay đổi không đồng nhất giữa hai nhánh thì đó là conflix code (xung đột code)
-
+Sử dụng để gộp các commit từ nhánh này vào nhánh khác, bằng cách xây dựng lại các commit base kế thừa từ nhánh cũ và viết lại lịch sử commit sau các commit cơ sở mới. Kỹ thuật này thường được áp dụng để xử lý các conflix trong code<br>
+Ví dụ: Muốn gộp các commit của nhánh master vào nhánh branch1, thì đứng ở nhánh branch1 và thực hiện lệnh:<br>
+`git rebase master`<br>
+Lúc này các commit ở master sẽ được branch kế thừa và đồng thời sẽ xuất hiện các commit này trong log của branch, nếu có sự thay đổi không đồng nhất giữa hai nhánh thì đó là conflix code (xung đột code)<br>
 ### 10. Một số tip khi làm việc với Git
 
 
