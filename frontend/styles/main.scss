@@ -46,6 +46,42 @@
      color: inherit;
  }
 
+// <------------share class
+ img {
+     width: 100%;
+     object-fit: cover;
+ }
+
+ .before-top {
+    width: calc(100% - 30px);
+    background: #e5e5e5;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    content: "";
+ }
+
+ .title-news-link {
+    color: inherit;
+    font-weight: bold;
+ }
+
+ .title-news-link:hover {
+    text-decoration: none;
+    color: #087cce;
+ }
+
+ .content-news-link {
+    color: inherit;
+    font-size: 14px;
+ }
+
+ .content-news-link:hover {
+     text-decoration: none;
+     color: inherit;
+ }
+
 
 .border-left {
     border-left: 1px solid #E5E5E5;
