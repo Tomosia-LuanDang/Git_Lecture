@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     <header class="page-header">
@@ -35,7 +36,7 @@
         </div>
         <nav class="navigation">
             <ul class="parent">
-                <li><a href="#"><img src="img/icons8-home-24.png" alt="" class="icon icon-home"></a></li>
+                <li><i class="fa fa-home" aria-hidden="true"></i></li>
                 <li><a href="#">Thời sự</a></li>
                 <li><a href="#">Thời sự</a></li>
                 <li><a href="#">Thời sự</a></li>
@@ -59,9 +60,76 @@
             </ul>
         </nav>
     </header>
-    <div class="content container" style="width: 100%; height: 300px; background-color: pink;">
-        
+<!-- Content -->
+    <div class="content container">
+        <div class="row top-news">
+            <div class="col-8">
+                <div class="row top-news-top">
+                    <div class="col-8"><img src="img/img2.jpg" alt=""></div>
+                    <div class="col-4">
+                        <Strong><a href="#" class="hot-news">Đường song hành đại lộ Võ Văn Kiệt trước ngày thông xe</a></Strong>
+                        <p class="description">
+                            <a href="#">
+                                <span class="location-stamp">TP HCM </span>
+                                - Tuyến song hành đại lộ Võ Văn Kiệt, quận 1, hoàn thiện sau 11 tháng thi công, khai thác cuối tháng 4 giúp xe đi lại thuận tiện.
+                            </a>
+                        </p>
+                        <p class="meta-news">
+                            Thời sự&emsp;<i class="fa fa-commenting-o" aria-hidden="true"></i>  61
+                        </p>
+                    </div>
+                </div>
+                <div class="row sub-hot-news">
+                    <div class="col-4">
+                        <Strong><a href="#" class="hot-news">Cơn sốt mua bán NFT ở Việt Nam</a></Strong>
+                        <p class="description">
+                            <a href="#">
+                                Bất chấp thị trường được đánh giá là "còn nhiều hoang dã", mua bán NFT vẫn sôi động ở nhiều lĩnh vực, từ bất động sản, du lịch đến showbiz Việt.
+                            </a>
+                        </p>
+                        <p class="meta-news">
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i>  42
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <Strong><a href="#" class="hot-news">Xe tải sụp hố sâu</a></Strong>
+                        <p class="description">
+                            <a href="#">
+                                <span class="location-stamp">TP HCM </span>
+                                - Ôtô tải 15 tấn vừa qua cầu Phú Mỹ, quận 7, bị sụp hố rộng 3 m, sâu hơn 2 m, sáng 20/4.
+                            </a>
+                        </p>
+                        <p class="meta-news">
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i>  37
+                        </p>
+                    </div>
+                    <div class="col-4 item-gocnhin">
+                        <p class="title">Góc nhìn</p>
+                        <div class="content-gocnhin">
+                            <Strong><a href="#" class="hot-news">Nghịch lý giáo dục</a></Strong>
+                            <p class="description">
+                                <a href="#">
+                                    Việc loay hoay sửa tiểu tiết khiến ngành giáo dục vừa chỉnh được bất cập này lại nảy sinh nghịch lý khác.
+                                </a>
+                            </p>
+                            <p class="meta-news">
+                            <div class="row">
+                                <div class="col meta-news">
+                                    <i>Trương Chí Hùng<br></i><i class="fa fa-commenting-o" aria-hidden="true"></i>  61
+                                </div>
+                                <div class="col author-img">
+                                    <img src="https://i1-vnexpress.vnecdn.net/2020/09/30/truongchihungpng-1601425356.png?w=100&h=100&q=100&dpr=1&fit=crop&s=KePx5kDg_a7YwX06J_1F2Q" alt="">
+                                </div>    
+                            </div>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 hot-new-qc"><img src="img/img1.png" alt="#"></div>
+        </div>
     </div>
+
     <footer class="page-footer container">
         <div class="top-footer">
             <div class="list-menu-footer bold-menu-footer">
@@ -105,11 +173,15 @@
             <div class="wrap-contact border-left">
                 <div class="download">
                     <p>Tải ứng dụng</p>
-                    <a class="btn-control" href="#"><i class="fa fa-etsy" aria-hidden="true"></i>VnExpress</a>
-                    <a class="btn-control" href="#"><i class="fa fa-etsy" aria-hidden="true"></i>International</a>
+                    <div class="sub-content-contact">
+                        <a class="btn-control" href="#"><i class="fa fa-etsy" aria-hidden="true"></i>VnExpress</a>
+                        <a class="btn-control" href="#"><i class="fa fa-etsy" aria-hidden="true"></i>International</a>
+                    </div>
                 </div>
                 <div class="contact">
                     <p>Liên hệ</p>
+                    <div class="sub-content-contact">
+                    </div>
                 </div>
                 <div class="hotline">
                     <p>Đường dây nóng</p>

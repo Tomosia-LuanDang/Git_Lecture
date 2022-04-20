@@ -2,15 +2,14 @@
     margin: 0;
     padding: 0;
     border: 0;
+    //background-image: url('/frontend/img/banner-the-jade-orchid-new.jpg');
+    
 }
+ img {
+     width: 100%;
+     object-fit: cover;
+ }
 
-.container {
-    width: 100%;
-    max-width: 1130px;
-    padding: 0 15px;
-    margin: 0 auto;
-    position: relative;
-}
 
 .border-left {
     border-left: 1px solid #E5E5E5;
@@ -18,11 +17,25 @@
     margin-left: -15px;
 }
 
+.btn-control {
+    height: 32px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #757575;
+    display: inline-block;
+    text-decoration: none;
+}
+
 .page-header {
+    background-color: #ffff;
     .header-top {
+        justify-content: center;
         display: flex;
         width: 100%;
-        max-width: 1130px;
         padding: aut0 15px;
         margin: 10px auto;
         position: relative;
@@ -32,7 +45,7 @@
             width: 550px;
             .today {
                 font-size: 14px;
-                line-height: 32px;
+                line-height: 50px;
                 margin-left: 20px;
                 padding-left: 15px;
                 opacity: 0.6;
@@ -43,8 +56,8 @@
                 height: 26px;
                 background: #E5E5E5;
                 position: absolute;
-                left: 170px;
-                top: 2px;
+                left: 564px;
+                top: 12px;
             }
         }
         .controls-area {
@@ -95,8 +108,8 @@
                 height: 26px;
                 background: #E5E5E5;
                 position: absolute;
-                left: 796px;
-                top: 5px;
+                left: 1200px;
+                top: 15px;
             }
             a {
                 padding: 0 5px;
@@ -152,7 +165,6 @@
                 color: inherit;
                 line-height: 24px;
                 a {
-                text-decoration: none;
                 color: #4F4F4F;
                 font-size: 15px;
                 }
@@ -160,6 +172,67 @@
         }
     }//end nav
 } //end page-header
+
+.content {
+    margin-top: 200px;
+   
+    .description {
+        .location-stamp {
+            font-size: 14px;
+            color: #757575;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    .top-news-top {
+        background: #f7f7f7;
+        
+    }
+
+    .meta-news {
+        font-size: 14px;
+        color: #757575;
+        
+    }
+    .hot-news {
+        color: black;
+    }
+
+    .hot-news:hover {
+        text-decoration: none;
+        color: #087cce;
+    }
+
+    .sub-hot-news {
+        margin-top: 20px;
+        .item-gocnhin {
+            
+            .title {
+                color: #9f224e;
+                font-weight: bold;
+                padding-bottom: -16px;
+            }
+            .content-gocnhin {
+                margin-top: -16px;
+            }
+        }
+        
+    }
+    .author-img {
+        img {
+            border-radius:50%;
+            -moz-border-radius:50%;
+            -webkit-border-radius:50%;
+            width: 70px;
+            background: #f7f7f7;
+        }
+    }
+
+}
 
 .page-footer {
     border-top: 5px solid #E5E5E5;
@@ -176,7 +249,6 @@
                 margin-bottom: 15px;
                 a {
                     color: inherit;
-                    text-decoration: none; 
                 }
             }
             .boder-top{
@@ -191,20 +263,24 @@
 
         .wrap-contact {
             .download {
-            margin-bottom: 8px;
-            .btn-control {
-                height: 32px;
-                line-height: 30px;
-                padding: 0 10px;
-                margin: 0 8px;
-                border: 1px solid #e5e5e5;
-                border-radius: 3px;
-                font-size: 14px;
-                color: #757575;
-                display: inline-block;
-                text-decoration: none;
+                p {
+                    font-size: 14px;
+                    color: #757575;
+                }
+                
             }
-            
+
+            .contact {
+
+            }
+
+            .hotline {
+                .phone-number {
+
+                }
+            }
+            .sub-content-contact {
+                margin: 8px 0;
             }
         }
     }
