@@ -216,6 +216,8 @@ img {
     background: #f7f7f7; }
   .content .quick-news .news-item {
     margin-top: 16px; }
+  .content .quick-news .img-quick-news {
+    margin: 18px 0; }
 
 .page-footer {
   border-top: 5px solid #E5E5E5;
